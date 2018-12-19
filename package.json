@@ -1,0 +1,25 @@
+{
+  "name": "vendor-panel",
+  "version": "1.0.0",
+  "description": "Protractor test",
+  "main": "index.js",
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "test": "./node_modules/.bin/protractor  protractor.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desamanitha/vendor-panel.git"
+  },
+  "author": "Anitha Desam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desamanitha/vendor-panel/issues"
+  },
+  "homepage": "https://github.com/desamanitha/vendor-panel#readme",
+  "devDependencies": {
+    "@babel/register": "^7.0.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.1"
+  }
+}
