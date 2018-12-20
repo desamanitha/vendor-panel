@@ -32,8 +32,7 @@ describe('Marketplace Registration', function() {
         listPage.registerOnThisList.click();
 
         //look for the marketplace logo
-        expect(element(by.xpath('//div[@class="affiliatebacklink"]/a/img')).getAttribute('src')).toEqual("https://www.vendorpanel.com.au/img/c.gif")
-       
+        expect(element(by.className('affheader')).getAttribute('style').getCssValue('background-image')).toEqual('url("https://www.vendorpanel.com.au/Img/Affiliates/Channels/205BDE2675B6/205BDE2675B6.jpg")');
         //validate the name of the category on the registration page
         expect(registrationPage.supplierRegistrationPageHeading.getText()).toEqual('Register as a supplier on the Advertising and Media Services list.');
 
