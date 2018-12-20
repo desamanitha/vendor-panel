@@ -1,8 +1,10 @@
 const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+const Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+
 
 exports.config = {
     framework: 'jasmine',
-    specs: ['./tests/**/*.spec.js'],
+    specs: ['./test/**/*.spec.js'],
     directConnect: true,
     jasmineNodeOpts: {
         showColors: true,
@@ -15,5 +17,10 @@ exports.config = {
               displayStacktrace: true
             }
           }));
+          jasmine.getEnv().addReporter(
+            new Jasmine2HtmlReporter({
+              savePath: 'target/screenshots'
+            })
+          );
     }
   }
